@@ -6,6 +6,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Menu {
+
     public static void main(String[] args) {
         int opcao;
 
@@ -31,25 +32,25 @@ public class Menu {
             if (opcao==0)
                 break;
             else if (opcao==1)
-                Exercicio1();
+                exercicio1();
             else if (opcao==2)
-                Exercicio2();
+                exercicio2();
             else if (opcao==3)
-                Exercicio3();
+                exercicio3();
             else if (opcao==4)
-                Exercicio4();
+                exercicio4();
             else if (opcao==5)
-                Exercicio5();
+                exercicio5();
             else if (opcao==6)
-                Exercicio6();
+                exercicio6();
             else if (opcao==7)
-                Exercicio7();
+                exercicio7();
             else if (opcao==8)
-                Exercicio8();
+                exercicio8();
             else if (opcao==9)
-                Exercicio9();
+                exercicio9();
             else if (opcao==10)
-                Exercicio10();
+                exercicio10();
             else
                 JOptionPane.showMessageDialog(null, "Opção inválida. tente novamente!" );
         } while (opcao != 0);
@@ -59,7 +60,7 @@ public class Menu {
     //1: Soma de Dois Números
     //Peça ao usuário para inserir dois números e exiba a soma deles.
 
-    public static void Exercicio1() {
+    public static void exercicio1() {
         Scanner sc = new Scanner (System.in);
 
         System.out.print("Insira o primeiro numero: ");
@@ -79,9 +80,9 @@ public class Menu {
         sc.close();
     }
 
-    // 2: Verificar Número Par ou Ímpar
+    // 2: Verificar Número Par ou Impar
     // Peça ao usuário para inserir um número e determine se é par ou ímpar.
-    public static void Exercicio2() {
+    public static void exercicio2() {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Digite um numero: ");
@@ -101,7 +102,7 @@ public class Menu {
 
     //3: Calculadora Simples
     //Crie uma calculadora que permita aos usuários realizar operações de adição, subtração, multiplicação e divisão.
-    public static void Exercicio3() {
+    public static void exercicio3() {
         Scanner sc = new Scanner (System.in);
 
         int op;
@@ -181,7 +182,7 @@ public class Menu {
 
     //4: Fatorial de um Número
     //	Peça ao usuário para inserir um número e calcule o fatorial desse número.
-    public static void Exercicio4() {
+    public static void exercicio4() {
         Scanner sc = new Scanner (System.in);
 
         System.out.print("Insira um numero: ");
@@ -197,7 +198,7 @@ public class Menu {
 
     //5: Contagem Regressiva
     //Peça ao usuário para inserir um número e faça uma contagem regressiva a partir desse número até 1.
-    public static void Exercicio5() {
+    public static void exercicio5() {
         Scanner sc = new Scanner (System.in);
 
         System.out.print("Insira o primeiro numero: ");
@@ -217,7 +218,7 @@ public class Menu {
 
     //6: Média de Números
     //Peça ao usuário para inserir uma série de números e calcule a média deles.
-    public static void Exercicio6() {
+    public static void exercicio6() {
         Scanner sc = new Scanner (System.in);
 
         double total = 0, num, qtd=0;
@@ -243,7 +244,7 @@ public class Menu {
 
     //7: Tabuada
     //Peça ao usuário para inserir um número e exiba a tabuada desse número de 1 a 10.
-    public static void Exercicio7() {
+    public static void exercicio7() {
         Scanner sc = new Scanner (System.in);
 
         int tabuada, produto;
@@ -265,7 +266,7 @@ public class Menu {
     //Peça ao usuário para inserir uma palavra e determine se é um palíndromo
     //(se pode ser lida da mesma forma da esquerda para a direita e vice-versa).
 
-    public static void Exercicio8() {
+    public static void exercicio8() {
         Scanner sc = new Scanner (System.in);
 
         String palavra, arvalap="";
@@ -289,7 +290,7 @@ public class Menu {
     //Crie um programa que converta a temperatura de Celsius para Fahrenheit ou vice-versa,
     //dependendo da escolha do usuário.
 
-    public static void Exercicio9() {
+    public static void exercicio9() {
         Scanner sc = new Scanner (System.in);
 
         System.out.println("Escolha como gostaria de vonverter a temperatura: ");
@@ -337,7 +338,7 @@ public class Menu {
     //Crie um jogo onde o computador escolhe um número aleatório entre 1 e 100, e o usuário tem que adivinhar
     //o número. O programa deve dar dicas se o número é maior ou menor, até que o usuário acerte.
 
-    public static void Exercicio10() {
+    public static void exercicio10() {
         Random gen = new Random();
         Scanner sc = new Scanner (System.in);
 
